@@ -1,0 +1,61 @@
+<html>
+    <style>
+        h1 {
+            padding: 15px;
+            text-align: center;
+            color: midnightblue;
+        }
+        .app {
+            background-color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .tile {
+            margin: auto;
+            height: 150px;
+            width: 150px;
+            background-image: radial-gradient(circle, aliceblue, darkcyan);
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+        }
+        .tile p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .orange {
+            background-image: radial-gradient(circle, aliceblue, orange);
+        }
+        .green {
+            background-image: radial-gradient(circle, aliceblue, lightgreen);
+        }
+    </style>
+    <body class="app">
+        <h1>PAUTA</h1>
+        <div class="grid">
+            <div class="tile">
+				<a href="https://airtable.com/shrVf60MfrDHTl6x2">
+				<p>Anotar Toma</p>
+				</a>
+			</div>
+            <div class="tile orange">
+				<a href="https://airtable.com/shrvzlZYTvPurLcwD/tblGpIAy2MAd5CV7k">
+				<p>Ver Tomas</p>
+				</a>
+			</div>
+            <div class="tile green">
+				<a href="https://airtable.com/appHo9s1nPve4Bz5h/tblGpIAy2MAd5CV7k/viwt0DinZrkhmtXYE?blocks=blifyVpDAOrD2nrg7">
+				<p>Gráficas</p>
+				</a>
+			</div>
+        </div>
+    </body>
+</html>
